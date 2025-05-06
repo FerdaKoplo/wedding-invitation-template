@@ -2,6 +2,8 @@ import { WeddingEventList } from '../constant/constant'
 import { FaMapLocationDot } from 'react-icons/fa6'
 
 const WeddingEvent = () => {
+  const BASE = import.meta.env.BASE_URL;
+
   return (
     <div className='flex flex-col items-center px-4 md:px-20 lg:px-32 justify-center min-h-screen'>
       <div className='text-center flex flex-col gap-5 items-center'>
@@ -10,7 +12,7 @@ const WeddingEvent = () => {
       </div>
 
       <div className='flex flex-col lg:flex-row items-center justify-center mt-20 gap-10'>
-        <img src="/assets/wedding-event/akad.jpg" className='rounded-3xl lg:rounded-l-3xl mb-10 lg:mb-0 w-full max-w-md lg:max-w-[545px]' width={545} alt="img" />
+        <img src={`${BASE}assets/wedding-event/akad.jpg`} className='rounded-3xl lg:rounded-l-3xl mb-10 lg:mb-0 w-full max-w-md lg:max-w-[545px]' width={545} alt="img" />
         <div className='flex flex-col gap-10'>
           {WeddingEventList.map((item, i) => (
             <div key={i} className='w-full max-w-4xl bg-pink-800 p-6 rounded-2xl grid place-items-center'>

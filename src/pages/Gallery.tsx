@@ -1,7 +1,6 @@
 import { GalleryList } from '../constant/constant'
 import { motion } from 'framer-motion'
 
-
 const Gallery = () => {
   return (
     <div className='px-4 lg:px-32 gap-5 flex flex-col items-center justify-center min-h-screen'>
