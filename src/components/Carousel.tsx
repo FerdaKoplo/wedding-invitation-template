@@ -2,7 +2,6 @@ import { useRef } from 'react'
 import { CarouselList } from '../constant/constant'
 import { animate, motion, useAnimationFrame, useMotionValue } from 'framer-motion'
 
-
 const duplicatedList = [...CarouselList, ...CarouselList, ...CarouselList, ...CarouselList]
 
 const Carousel = () => {
@@ -10,7 +9,7 @@ const Carousel = () => {
     const containerRef = useRef<HTMLDivElement | null>(null)
     const lastTime = useRef(0)
 
-    useAnimationFrame((t, delta) => {
+    useAnimationFrame((delta) => {
         lastTime.current += delta
 
         if (lastTime.current >= 5000) {
