@@ -1,4 +1,3 @@
-import React from 'react'
 import Countdown from '../components/Countdown'
 import { motion } from 'framer-motion'
 
