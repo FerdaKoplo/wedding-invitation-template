@@ -1,6 +1,4 @@
-import React from 'react'
 import { GalleryList } from '../constant/constant'
-import { div } from 'framer-motion/client'
 import { motion } from 'framer-motion'
 
 

@@ -1,13 +1,13 @@
-import React, { useMemo, useRef } from 'react'
+import React, { useRef, createRef } from 'react'
 
-export const useSectionRefs = (navList: {key:string}[]) => {
-  return useMemo(() => {
-    const refs : Record<string, React.RefObject<HTMLDivElement | null>> = {}
+export const useSectionRefs = (navList: { key: string }[]) => {
+  const refs = useRef<Record<string, React.RefObject<HTMLDivElement | null>>>({})
 
-    navList.forEach((section) => {
-      refs[section.key] = useRef<HTMLDivElement | null>(null)
-    })
+  navList.forEach((section) => {
+    if (!refs.current[section.key]) {
+      refs.current[section.key] = createRef<HTMLDivElement>()
+    }
+  })
 
-    return refs
-  }, [navList]) 
+  return refs.current
 }

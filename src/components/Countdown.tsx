@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import { div } from "framer-motion/client"
 import { useEffect, useState } from "react"
 
 interface CountdownProps {
@@ -35,7 +34,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             setTimeLeft(CalculateTimeLeft())
         }, 1000)
         return () => clearInterval(timer)
-    }, [])
+    })
 
     if (!timeLeft) {
         return (

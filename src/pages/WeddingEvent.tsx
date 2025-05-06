@@ -1,6 +1,4 @@
-import React from 'react'
 import { WeddingEventList } from '../constant/constant'
-import { div } from 'framer-motion/client'
 import { FaMapLocationDot } from 'react-icons/fa6'
 
 const WeddingEvent = () => {

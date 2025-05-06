@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import Carousel from "../components/Carousel"
 import Nav from "../components/layout/Nav"
 import { NavList } from "../constant/constant"
