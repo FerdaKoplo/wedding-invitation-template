@@ -2,6 +2,8 @@ import Countdown from '../components/Countdown'
 import { motion } from 'framer-motion'
 
 const Hero = () => {
+  const BASE = import.meta.env.BASE_URL;
+
   return (
     <motion.div
       initial={{ scale: 2, opacity: 0 }}
@@ -35,7 +37,7 @@ const Hero = () => {
         transition={{ delay: 1.3 }}
         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square overflow-hidden rounded-xl"
       >
-        <img src="/assets/hero.jpg" alt="" className='w-full h-full object-cover' />
+        <img src={`${BASE}assets/hero.jpg`} alt="" className='w-full h-full object-cover' />
       </motion.div>
     </motion.div>
   )
