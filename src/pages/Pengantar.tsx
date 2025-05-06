@@ -1,6 +1,4 @@
-import React from 'react'
 import { PengantarList } from '../constant/constant'
-import { div } from 'framer-motion/client'
 import { motion } from 'framer-motion'
 
 const Pengantar = () => {

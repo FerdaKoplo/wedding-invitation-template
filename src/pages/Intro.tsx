@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Link, useNavigate, useSearchParams } from "react-router-dom"
+import { useState } from "react"
+import {  useNavigate, useSearchParams } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
 import { IoIosMailOpen } from "react-icons/io"
 
